@@ -1,0 +1,27 @@
+body {
+  display: block;
+  position: relative;
+
+}
+
+body::after {
+  content: "";
+  background: url("assets/logo.jpg") no-repeat center center fixed;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: asuRacingTeam;
+  src: url("assets/Frutiger CE 45 Light.ttf");
+}
+
+* {
+  font-family: 'asuRacingTeam', cursive;
+  font-size: 16px;
+}
