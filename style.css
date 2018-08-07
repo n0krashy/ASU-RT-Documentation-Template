@@ -1,27 +1,162 @@
 body {
-  display: block;
-  position: relative;
-
+    display: block;
+    position: relative;
 }
 
 body::after {
-  content: "";
-  background: url("assets/logo.jpg") no-repeat center center fixed;
-  opacity: 0.6;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+    content: "";
+    background: url("assets/logo.jpg") no-repeat center center fixed;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 @font-face {
-  font-family: asuRacingTeam;
-  src: url("assets/Frutiger CE 45 Light.ttf");
+    font-family: asuRacingTeam;
+    src: url("assets/Frutiger CE 45 Light.ttf");
 }
 
 * {
-  font-family: 'asuRacingTeam', cursive;
-  font-size: 16px;
+    font-family: 'asuRacingTeam', cursive;
+    font-size: 16px;
 }
+
+.vertical-hr {
+    margin-right: 8px;
+    width: 0.1%;
+    height: 40px;
+    float: left;
+    background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-item:hover {
+    font-weight: bolder;
+    border-bottom: solid 1px #CC2929;
+}
+
+.navbar-light .navbar-nav .active {
+    font-weight: bolder;
+    border-bottom: solid 1px #CC2929;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: .8rem;
+}
+
+.sc:before {
+    height: 120px;
+    content: "";
+    display: block;
+}
+
+.gradient {
+    height: 120px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.93), rgb(0, 0, 0), rgba(0, 0, 0, 0.38));
+    background: linear-gradient(0deg, transparent, rgb(0, 0, 0));
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.smallNav {
+    overflow-y: scroll;
+}
+
+.gradientDrop {
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
+    font-weight: bolder;
+}
+
+.dropdown-menu {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+    text-align: center;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #CC2929;
+}
+
+.dropdown-item {
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+}
+
+.dropdown-item:hover {
+    color: #CC2929;
+    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(240, 0, 0);
+}
+
+.hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    border: 1px solid #ebe3e375
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #CC2929;
+}
+
+p {
+    color: #706c6c;
+}
+
+.footer a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+#facebook:hover {
+    color: #4267b2;
+}
+
+#instagram:hover {
+    color: #c32aa3;
+}
+
+#youtube:hover {
+    color: #ff0000;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#linkedin:hover {
+    color: #007bb5;
+}
+
+.Copyrights {
+    color: white;
+    font-size: 11px;
+}
+
